@@ -1,0 +1,357 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="css/bootstrap.min.css" >
+        <link rel="stylesheet" href="css/styles.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <title>ДЮСШ "ОЛІМП"</title>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.2/jquery.fancybox.min.css" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+  $('body').append('<a href="#" id="go-top" title="Вгору">Вгору</a>');
+});
+
+$(function() {
+ $.fn.scrollToTop = function() {
+  $(this).hide().removeAttr("href");
+  if ($(window).scrollTop() >= "250") $(this).fadeIn("slow")
+  var scrollDiv = $(this);
+  $(window).scroll(function() {
+   if ($(window).scrollTop() <= "250") $(scrollDiv).fadeOut("slow")
+   else $(scrollDiv).fadeIn("slow")
+  });
+  $(this).click(function() {
+   $("html, body").animate({scrollTop: 0}, "slow")
+  })
+ }
+});
+
+$(function() {
+ $("#go-top").scrollToTop();
+});
+        
+        </script>
+    </head>
+    <body>
+        <header>
+          <nav class="navbar navbar-my" role="navigation">
+              <div class="aligns"><p><a href="tel:+380980989898" class="tel"><big>+38(098)-098-98-98</big></a><br><span class="glyphicon glyphicon-map-marker"></span> <small>м.Кролевець вул.Ярмаркова,18</small></p>
+              </div>
+              <div class="container-fluid">
+                  <div class="navbar-header">
+                      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                          <span class="sr-only">Toggle navigation</span>
+                          <span class="icon-bar"></span>
+                          <span class="icon-bar"></span>
+                          <span class="icon-bar"></span>
+                      </button>
+                      <p class="navbar-brand" ><small>Кролевецька ДЮСШ</small><br> "Олімп"</p>
+                  </div>
+                  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                      <ul class="nav navbar-nav">
+                          <li><a href="#teachers">Викладачі</a></li>
+                          <li><a href="#news">Новини</a></li>
+                          <li><a href="#best">Гордість школи</a></li>
+                          <li><a href="#photo">Фотогалерея</a></li>
+                           <li><a href="#adress">Контакти</a></li>
+                      </ul>
+                  </div>
+              </div>
+            </nav>  
+        </header>
+        <main>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-6 col-sm-12">
+                        <div id="myCarousel" class="carousel slide"  data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                                <li data-target="#myCarousel" data-slide-to="1"></li>
+                                <li data-target="#myCarousel" data-slide-to="2"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                                <div class="active item ">
+                                    <img class="d-block w-100" src="images/d4.jpg" alt="First slide">
+                                </div>
+                                <div class="item ">
+                                    <img class="d-block w-100" src="images/d2.jpg" alt="First slide">
+                                </div>
+                                <div class="item ">
+                                    <img class="d-block w-100" src="images/d3.jpg" alt="First slide">
+                                </div>
+                            </div>
+                            <a class="carousel-control left" href="#myCarousel" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left"></span>
+                            </a>
+                            <a class="carousel-control right" href="#myCarousel" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right"></span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                        <div>
+                            <h3> Кролевецька дитячо-юнацька спортивна школа <b>"Олімп"</b> запрошує до занять з таких видів спорту:</h3>
+                            <big>
+                                <ul>
+                                    <li><span class="glyphicon glyphicon-ok"> </span>Баскетбол</li>
+                                    <li><span class="glyphicon glyphicon-ok"> </span>Волейбол</li>
+                                    <li><span class="glyphicon glyphicon-ok"> </span>Дзюдо</li>
+                                    <li><span class="glyphicon glyphicon-ok"> </span>Джиу-джитсу</li>
+                                    <li><span class="glyphicon glyphicon-ok"> </span>Легка атлетика</li>
+                                    <li><span class="glyphicon glyphicon-ok"> </span>Лижні гонки</li>
+                                    <li><span class="glyphicon glyphicon-ok"> </span>Пауерліфтинг</li>
+                                    <li><span class="glyphicon glyphicon-ok"> </span>Радіоспорт</li>
+                                    <li><span class="glyphicon glyphicon-ok"> </span>Настільний теніс</li>
+                                    <li><span class="glyphicon glyphicon-ok"> </span>Футбол</li></ul></big>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="container-fluid table-responsive">
+                <table class="table table-hover">
+                    <caption><h2 id="teachers">Наші викладачі</h2></caption>
+                    <thead>
+                        <tr>
+                            <th class="white">Вид спорту</th>
+                            <th class="white">ПІБ викладача</th>
+                        </tr>
+                    </thead>
+                    <tbody class="white">
+                        <tr><td>Баскетбол<br>з 8 років</td><td>Задорожний Є.О.</td>
+                        </tr>
+                        <tr>
+                            <td>Волейбол<br>з 8 років</td><td>Жабко Ю.В.<br> Редько С.Ю.</td>
+                        </tr>
+                        <tr>
+                            <td>Дзюдо<br>з 6 років</td><td>Борсук М.П.<br>Коров'яковська Є.О.<br>Пономарчук Д.В.</td>
+                        </tr>
+                        <tr>
+                            <td>Джиу-джитсу <br>з 6 років</td><td>Бочаров Д.С.</td>
+                        </tr>
+        <tr>
+            <td>Легка атлетика<br>з 9 років</td>
+            <td>Юрченко М.А.</td>
+        </tr>
+        <tr>
+            <td>Лижні гонки<br>з 7 років</td>
+            <td>Скороходова Л.О.</td>
+           
+        </tr>
+        <tr>
+            <td>Пауерліфтинг<br>з 12 років</td>
+            <td>Коноваленко Д.Д.</td>
+            
+        </tr>
+        <tr>
+            <td>Радіоспорт<br>з 8 років</td>
+            <td>Щербань С.В.</td>
+            
+        </tr>
+        <tr>
+            <td>Настільний теніс<br>з 8 років</td>
+            <td>Дядюх О.В.</td>
+            
+        </tr>
+        <tr>
+            <td>Футбол<br>з 6 років</td>
+            <td>Жабко А.А.<br> Пустовойт П.А. <br>Ситник Р.С.</td>
+            
+        </tr>
+    </tbody>
+</table>
+                 
+            </div>
+        
+            <div>
+           <div class="container-fluid">
+               <h2 class="black" id="news">Новини:</h2>
+                
+             <div class="row row-flex"><div class="width"><div class="col-md-6 col-sm-12 black">
+                    <div class="block2"><img src="images/djiu.jpg" class="resp"><br>
+                   
+                   </div>
+                    
+                    </div>
+                 <div class="col-md-6 col-sm-12 black">
+                    <div class="fon4 marg align">
+                   <h3 class="black">З Чемпіонату України з джиу-джитсу спортсмени повернулися з вагомими здобутками</h3><br>
+                   <p>З 5 по 7 жовтня, в Кривому Розі проходив Чемпіонат України з джиу-джитсу, в якому взяли участь і вихованці тренера-викладача Кролевецької ДЮСШ “Олімп”, Президента федерації Сумщини з джиу-джитсу Дмитра Бочарова.</p>
+                        <p>З більш ніж 500 учасників змагань, тринадцятеро представляли Сумщину, серед яких і кролевчани. Представляючи область та місто Кролевець на Всеукраїнському Чемпіонаті спортсмени показали високий рівень підготовки. Результатом цього було забезпечено лідируючі позиції у загальнокомандному заліку.</p>
+                        <p>Так, наші спортсмени зайняли сім перших місць, чотири – других та три – третіх, а наш земляк Кирил Карпенко єдиний на всю Україну був відзначений Кубком за кращу техніку, адже спортсмен переміг у всіх зустрічах достроково.</p>
+                        
+        </div>
+                    </div>
+                </div>
+            </div>  
+             <div class="row row-flex"><div class="width">
+                 <div class="col-md-6 col-sm-12 black">
+                    <div class="fon4 marg align">
+                   <h3 class="black">Ельвіра Ничипорук – бронзова призерка Чемпіонату світу з радіоспорту</h3><br>
+                   <p>Кролевчанка Ельвіра Ничипорук, вихованка ДЮСШ «Олімп» (тренер Сергій Щербань) на Чемпіонаті світу з радіоспорту стала бронзовим призером в командному заліку у складі збірної України.</p>
+                        <p>Дані змагання проходять в Південній Кореї. Корейська радіолюбительска ліга (KARL) – приймаюча організація 19-го Чемпіонату світу IARU WORLD ARDF 2018. Всі заходи проводяться на околицях міста Сокчхо провінції Канвондо на різних ділянках. Це місто знаходиться неподалік місця проведення зимових Олімпійських ігор PyeongChang 2018.</p>
+                        
+                        
+        </div>
+                    </div>
+                 <div class="col-md-6 col-sm-12 black">
+                    <div class="block2"><img src="images/elv.jpg" class="resp"><br>
+                   
+                   </div>
+                    
+                    </div>
+                 
+                </div>
+            </div> 
+               <div class="row row-flex"><div class="width"><div class="col-md-6 col-sm-12 black">
+                    <div class="block2"><img src="images/pust.jpg" class="resp"><br>
+                   
+                   </div>
+                    
+                    </div>
+                 <div class="col-md-6 col-sm-12 black">
+                    <div class="fon4 marg align">
+                   <h3 class="black">Кролевчани – чемпіони Всеукраїнського турніру “Шкіряний м’яч”</h3><br>
+                   <p>29 серпня, у фіналі Всеукраїнських змагань “Шкіряний м’яч” на кубок Coca Cola, серед команд U-14  кролевецькі юнаки здобули «золоті» нагороди турніру.</p>
+                        <p>Вихованці Петра Пустовойта, які на груповому етапі не пропустили жодного м’яча, зберегли ворота «сухими» і у фінальному поєдинку проти господарів поля – Новокаховського НВК №2. А в серії післяматчевих пенальті воротар кролевецької команди взяв два удари суперника і наші земляки перемогли з рахунком 5:4, – повідомили у Федерації Футболу Сумщини.</p>
+                        
+                        
+        </div>
+                    </div>
+                </div>
+            </div>  
+               
+               
+               
+            
+           </div>
+           <br>
+           
+            </div> 
+            
+              <div class="fon4">
+           <div class="container-fluid"><h2 class="black" id="best">Найкращі учні ДЮСШ "Олімп":</h2>
+                
+             <div class="row row-flex"><div class="width"><div class="col-md-4 col-sm-12 black">
+                    <div class="block2"><img src="images/elvira.jpg" class="circle"><br>
+                   <h3 class="black">Ельвіра Ничипорук</h3><br>
+                   <p>Майстер спорту України з радіоспорту</p>
+                 <p>Переможець Кубку Світу 2017 року з радіоспорту серед юніорів</p></div>
+                    
+                    </div>
+                 <div class="col-md-4 col-sm-12 black">
+                    <div class="block2"><img src="images/kolodiazhnyi.jpg" class="circle"><br>
+                   <h3 class="black">Владислав Колодяжний</h3><br>
+                        <p>Член збірної команди з дзюдо Сумської області</p> <p>Призер Всеукраїнських турнірів з дзюдо, відкритих чемпіонатів області</p>
+        </div>
+                    </div>
+                <div class="col-md-4 col-sm-12 black"><div class="block2"><img src="images/popvchenko.jpg" class="circle"> <h3 class="black">Анатолій Поповченко </h3><br><p>Майстер спорту України з радіоспорту</p><p>Чемпіон Європи 2017 року з радіоспорту серед юніорів</p></div></div></div>
+            </div>  
+            
+           </div>
+           <br>
+           
+            </div> 
+            
+            <br> 
+            
+            
+            <div class="container" id="photo">
+    <h1>Фотогалерея</h1>
+    <div class="row">
+        <div class="col-md-3 col-sm-4 col-xs-6 thumb">
+            <a data-fancybox="gallery" href="images/1.jpg">
+                <img class="img-responsive" src="images/1.jpg" alt="">
+            </a>
+        </div>
+        <div class="col-md-3 col-sm-4 col-xs-6 thumb">
+            <a data-fancybox="gallery" href="images/2.jpg">
+                <img class="img-responsive" src="images/2.jpg" alt="">
+            </a>
+        </div>
+        <div class="col-md-3 col-sm-4 col-xs-6 thumb">
+            <a data-fancybox="gallery" href="images/3.jpg">
+                <img class="img-responsive" src="images/3.jpg" alt="">
+            </a>
+        </div>
+        <div class="col-md-3 col-sm-4 col-xs-6 thumb">
+            <a data-fancybox="gallery" href="images/4.jpg">
+                <img class="img-responsive" src="images/4.jpg" alt="">
+            </a>
+        </div>
+        <div class="col-md-3 col-sm-4 col-xs-6 thumb">
+            <a data-fancybox="gallery" href="images/5.jpg">
+                <img class="img-responsive" src="images/5.jpg" alt="">
+            </a>
+        </div>
+        <div class="col-md-3 col-sm-4 col-xs-6 thumb">
+            <a data-fancybox="gallery" href="images/6.jpg">
+                <img class="img-responsive" src="images/6.jpg" alt="">
+            </a>
+            </div>
+        <div class="col-md-3 col-sm-4 col-xs-6 thumb">
+            <a data-fancybox="gallery" href="images/7.jpg">
+                <img class="img-responsive" src="images/7.jpg" alt="">
+            </a>
+        </div>
+        <div class="col-md-3 col-sm-4 col-xs-6 thumb">
+            <a data-fancybox="gallery" href="images/8.jpg">
+                <img class="img-responsive" src="images/8.jpg" alt="">
+            </a>
+        </div>
+       
+        
+    </div>
+</div>
+            <br>
+            
+            
+       <div class="fon">
+           <div class="container-fluid"><h2 class="white" id="adress">ДЮСШ "ОЛІМП" - це</h2>
+               <h3 class="white">поєднання спортивних традицій 
+з сучасним підходом, професіоналізм тренерів,
+душевне і уважне ставленням до юних спортсменів</h3>
+               
+               
+             <div class="row"><div class="width"><div class="col-md-6 col-sm-12 white">
+                    <div class="block1"><img src="images/placeholder-filled-point.png"><br>
+                   <h2 class="white">Наші контакти</h2><br>
+                   <p>м.Кролевець, вул.Ярмаркова,18</p><p>Phone:+38(098)-098-98-98</p>
+                   <p>Facebook: &nbsp;<a href="https://www.facebook.com/krolevetssport/?epa=SEARCH_BOX&jazoest=26510012089113858387100122821041101165310410211374114116951207483120122121112101100101991085769119111741121161101051226611958651001201015667106899782103821146711475748354684886541215671106106778357505010657119838712177104781191116781" class="white hov">Спортивна Кролевеччина</a></p></div>
+                    
+                    </div>
+                 
+                 
+                <div class="col-md-6 col-sm-12 white"><div class="block1"><img src="images/clock-circular-outline.png"> <h2 class="white">Графік роботи</h2><br><p>Понеділок-П'ятниця:14.00-18.00</p><p>Субота:9.00-17.00</p><p>Неділя: вихідний</p></div></div></div>
+                
+            </div>  
+               
+               
+               
+               
+              
+              
+           
+           
+           
+         <div class="fon2"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2481.022037095716!2d33.38151691531002!3d51.54949491544616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x412bbb6bdefcb0c1%3A0x9d46f96a1e71c9c2!2z0LLRg9C70LjRhtGPINCv0YDQvNCw0YDQutC-0LLQsCwgMTgsINCa0YDQvtC70LXQstC10YbRjCwg0KHRg9C80YHRjNC60LAg0L7QsdC70LDRgdGC0YwsIDQxMzAw!5e0!3m2!1suk!2sua!4v1543688834373" width="100%" height="50%" frameborder="0" style="border:0" allowfullscreen></iframe></div>   
+           </div>
+           <br>
+           
+            </div>     
+        </main>
+        <footer>
+        </footer>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        
+<!-- Popper -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/esm/popper.min.js"></script>
+<!-- Bootstrap JS -->
+
+<!-- fancyBox -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.2/jquery.fancybox.min.js"></script>
+    </body>
+</html>
